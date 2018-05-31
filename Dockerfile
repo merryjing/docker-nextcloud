@@ -1,2 +1,3 @@
 FROM nextcloud
-RUN echo "ServerName localhost:80" << /etc/apache2/sites-available/000-default.conf
+RUN apt-get update 
+RUN apt-get install -y vim
